@@ -1,2 +1,2 @@
 # Task Manager RPG
-organise your life and spoil you character with rewards fr 
+organise your life and spoil your character with rewards fr 
