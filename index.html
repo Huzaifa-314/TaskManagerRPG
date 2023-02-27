@@ -2,19 +2,123 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>ur mum does it better</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>TASK RPG</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="img/dice.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <script src="index.js."></script>
 </head>
 
 <body>
-  <h1>
-    wait hold up.. aint you Nathaniel B???
-  </h1>
-  <script src="script.js"></script>
 
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <div id="preloader"></div>
+
+  <div class="back">
+    <nav>
+      <a href="index.html"><img class="work" src="img/dice.png"></a>
+      <ul>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="toDo.html">Tasks</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="game.html">Game</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="content">
+    <h1>
+      Welcome {Name}
+    </h1>
+    <h4>
+      <center>hope you are able to complete your tasks today</center>
+    </h4>
+  </div>
+
+
+  <section>
+    <div id="skills" class="skills">
+      <div class="title">
+        <h2>Task Manager RPG</h2>
+      </div>
+      <div class="box">
+        <div class="card">
+          <i class="fas fa-bars"></i>
+          <h5>Tasks</h5>
+          <a href="toDo.html"><img class="pic" src="img/tasks.png"></a>
+          <div class="pra">
+            <p></p>
+            <p style="text-align: center;">
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="far fa-user"></i>
+          <h5>Game</h5>
+          <a href="game.html"><img class="pic" src="img/game2.png"></a>
+          <div class="pra">
+            <p></p>
+            <p style="text-align: center;">
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="far fa-bell"></i>
+          <h5>Stats</h5>
+          <img class="pic" src="img/stats.png">
+          <div class="pra">
+            <p></p>
+            <p style="text-align: center;">
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="card">
+          <i class="fas fa-bars"></i>
+          <h5>Profile</h5>
+          <a href="profile.html"><img class="pic" src="img/profile.png"></a>
+          <div class="pra">
+            <p></p>
+            <p style="text-align: center;">
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="far fa-user"></i>
+          <h5>Shop</h5>
+          <a href="shop.html"><img class="pic" src="img/shop.png"></a>
+          <div class="pra">
+            <p></p>
+            <p style="text-align: center;">
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <footer class="back">
+    </footer>
+  </section>
+
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+
+  </script>
+
+
 </body>
 
 </html>

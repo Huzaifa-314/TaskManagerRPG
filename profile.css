@@ -1,0 +1,181 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.back{
+	height: 70em;
+	width: 100%;
+	background-image: url(../img/1107582.jpg);
+	background-size: cover;
+	background-position: center;
+  background-repeat: repeat;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.work{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+  height:3em;
+  width: 3em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+nav ul li{
+  background-color: #f5b747;
+  border-radius: 25px;
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+  zoom:1.2;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+nav ul li a:hover{
+	color: #f5dbab;
+	transition: .4s;
+}
+
+#coins{
+  width:40px;
+  height:40px;
+}
+
+span{
+  font-size: 25px;
+  color:#e9e2e2;
+  text-shadow: 1px 1px 4px #000000;
+  padding:10px;
+}
+
+
+#ProfilePage
+{
+  position: relative;
+  margin-top:-15.6cm;
+  margin-left:13em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+  width: 635px;
+  zoom:1.5;
+  background-color: white;
+  border-radius:20px;
+  padding-bottom:1em;
+  border: 3px solid orange;
+  
+}
+
+placeholder {
+  opacity:0.7;
+}
+
+input{
+  opacity:0.7;
+  text-align:center;
+}
+
+#LeftCol
+{
+    /* Move it to the left */
+    float: left;
+
+    width: 200px;
+    text-align: center;
+
+    /* Move it away from the content */
+    margin-right: 20px;
+}
+
+#Photo
+{
+  padding-top:1em;
+  width: 200px;
+  height: 200px;
+
+}
+
+img {
+  width:200px;
+  height:200px;
+  background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+}
+
+
+#PhotoOptions
+{
+  text-align: center;
+  width: 200px;
+}
+
+#Info
+{
+  padding:0.5em;
+  width: 400px;
+  text-align: center;
+  left:2em;
+  float:left;
+}
+
+#Info strong
+{
+  padding:1mm;
+  display: inline-block;
+  width: 100px;
+  border: 2px solid orange;
+  border-style: outset;
+  border-radius:25px;
+}
+
+#Info placeholder
+{
+  padding:1mm;
+  display: inline-block;
+  width: 250px;
+  border: 2px solid grey;
+  border-style: inset;
+  border-radius:25px;
+}
+
+#Info input{
+  padding:1mm;
+  display: inline-block;
+  width: 250px;
+  border: 2px solid grey;
+  border-radius:25px;
+  border-style: inset;
+}
+
+#preloader{
+  background: #000 url(img/loader2.gif) no-repeat center;
+  background-size:9%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
