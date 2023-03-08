@@ -58,3 +58,4 @@ window.addEventListener('load', () => {
   defendButton.addEventListener("click", defend);
   attackButton.addEventListener("click", attack);
 });
+
