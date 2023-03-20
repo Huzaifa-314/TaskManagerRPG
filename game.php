@@ -1,3 +1,8 @@
+<?php include 'include/topheader.php';
+$user_id = $_SESSION['ID'];
+$user_avatar = findval('avatar','task_users','ID',$user_id);
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -18,17 +23,7 @@
 
   <div id="preloader"></div>
 
-  <div class="back">
-    <nav>
-      <a href="index.html"><img class="work" src="img/dice.png"></a>
-      <ul>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="toDo.html">Tasks</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="game.html">Game</a></li>
-      </ul>
-    </nav>
-  </div>
+  <?php include 'include/header.php' ?>
 
   <h1>Fight!</h1>
 
@@ -45,7 +40,7 @@
     </div>
 
     <div class="avatars">
-      <img src="avatars/female.png">
+      <img src="avatars/<?php echo findval('image','avatars','ID',$user_avatar);?>">
       <img src="avatars/megatron.png">
     </div>
     

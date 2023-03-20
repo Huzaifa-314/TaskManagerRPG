@@ -1,3 +1,5 @@
+<?php include 'include/topheader.php' ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -16,23 +18,19 @@
 
   <div id="preloader"></div>
 
-  <div class="back">
-    <nav>
-      <a href="index.html"><img class="work" src="img/dice.png"></a>
-      <ul>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="toDo.html">Tasks</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="game.html">Game</a></li>
-      </ul>
-    </nav>
-  </div>
+  <?php include 'include/header.php' ?>
 
 
   <div class="content">
-    <h1>
-      Welcome {Name}
-    </h1>
+    <?php 
+      $user_id = $_SESSION["ID"];
+      ?>
+        <h1>
+          Welcome <?php echo findval('name','task_users','ID',$user_id);?>
+        </h1>
+      <?php
+    ?>
+    
     <h4>
       <center>hope you are able to complete your tasks today</center>
     </h4>
@@ -48,7 +46,7 @@
         <div class="card">
           <i class="fas fa-bars"></i>
           <h5>Tasks</h5>
-          <a href="toDo.html"><img class="pic" src="img/tasks.png"></a>
+          <a href="toDo.php"><img class="pic" src="img/tasks.png"></a>
           <div class="pra">
             <p></p>
             <p style="text-align: center;">
@@ -59,7 +57,7 @@
         <div class="card">
           <i class="far fa-user"></i>
           <h5>Game</h5>
-          <a href="game.html"><img class="pic" src="img/game2.png"></a>
+          <a href="game.php"><img class="pic" src="img/game2.png"></a>
           <div class="pra">
             <p></p>
             <p style="text-align: center;">
@@ -84,7 +82,7 @@
         <div class="card">
           <i class="fas fa-bars"></i>
           <h5>Profile</h5>
-          <a href="profile.html"><img class="pic" src="img/profile.png"></a>
+          <a href="profile.php"><img class="pic" src="img/profile.png"></a>
           <div class="pra">
             <p></p>
             <p style="text-align: center;">
@@ -95,7 +93,7 @@
         <div class="card">
           <i class="far fa-user"></i>
           <h5>Shop</h5>
-          <a href="shop.html"><img class="pic" src="img/shop.png"></a>
+          <a href="shop.php"><img class="pic" src="img/shop.png"></a>
           <div class="pra">
             <p></p>
             <p style="text-align: center;">
